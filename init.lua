@@ -39,7 +39,6 @@ return require('packer').startup(function()
     'nvim-telescope/telescope.nvim',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
-  -- Auto pairs
   use 'windwp/nvim-autopairs'
   use {
     "ur4ltz/surround.nvim",
@@ -47,4 +46,5 @@ return require('packer').startup(function()
       require"surround".setup {mappings_style = "surround"}
     end
   }
+  use 'p00f/nvim-ts-rainbow'
 end)
