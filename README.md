@@ -166,7 +166,11 @@
 
 ## Внешний вид (скриншоты)
 
-![Neovim + Open file + terminals (tmux)](./images/screenshot_code.png)
-NeoVim + Open files + terminal (tmux)
+![Neovim + Open file](./images/screenshot_code.png)
+NeoVim + Open file. Терминал iTerm2 
 
+
+### Видео
+
+![Neovim Video](./images/neovim.gif)
 
