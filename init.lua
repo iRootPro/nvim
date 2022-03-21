@@ -54,4 +54,11 @@ return require('packer').startup(function()
     end,
     ft = { 'markdown' }
   } 
+  use {
+  "folke/zen-mode.nvim",
+  config = function()
+    require("zen-mode").setup {
+    }
+  end
+}
 end)
