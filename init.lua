@@ -1,6 +1,7 @@
 require('basics')
 require('colors')
 require('telescope-config')
+require('lazygit-config')
 require('coc-config')
 require('lualine').setup()
 require('git-config')
