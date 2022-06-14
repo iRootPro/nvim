@@ -5,6 +5,7 @@ require('coc-config')
 require('lualine').setup()
 require('git-config')
 require('diffview-config')
+require('toggleterm-config')
 require('autopairs-config')
 require('autosave-config')
 require('nvim-treesitter.configs').setup {
@@ -31,6 +32,11 @@ return require('packer').startup(function()
   use 'Pocco81/AutoSave.nvim'
   use { 'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' } }
   use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
+  use {"akinsho/toggleterm.nvim", tag = 'v1.*', config = function()
+      require("toggleterm").setup({
+    })
+    end
+  }
   use {
     'nvim-lualine/lualine.nvim',
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
