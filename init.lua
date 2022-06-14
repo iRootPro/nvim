@@ -25,6 +25,7 @@ require('nvim-treesitter.configs').setup {
 return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
   use {'neoclide/coc.nvim', branch = 'release'}
+  use {'fatih/vim-go'}
   use 'folke/tokyonight.nvim'
   use 'nvim-treesitter/nvim-treesitter' 
   use 'tpope/vim-commentary'
@@ -33,6 +34,7 @@ return require('packer').startup(function()
   use 'Pocco81/AutoSave.nvim'
   use { 'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' } }
   use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
+  use {'majutsushi/tagbar'}
   use { "kyazdani42/nvim-tree.lua", requires = {
         "kyazdani42/nvim-web-devicons",
       },
@@ -41,6 +43,7 @@ return require('packer').startup(function()
           require("nvim-tree").setup({})
    end,
   }
+  use {'simrat39/symbols-outline.nvim', cmd = "SymbolsOutline", }
   use {"akinsho/toggleterm.nvim", tag = 'v1.*', config = function()
       require("toggleterm").setup({
     })
