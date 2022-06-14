@@ -8,7 +8,7 @@ require('diffview-config')
 require('autopairs-config')
 require('autosave-config')
 require('nvim-treesitter.configs').setup {
-  ensure_installed = "maintained",
+  ensure_installed = {'javascript', 'go'},
   context_commentstring = {
     enable = true
   },
