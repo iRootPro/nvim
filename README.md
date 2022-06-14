@@ -168,6 +168,14 @@
 
 </details>
 
+
+<details>
+<summary>Терминал</summary>
+
+**Ctrl+\\** - открыть/закрыть терминал
+
+</details>
+
 ## Внешний вид (скриншоты)
 
 ![Neovim + Open file](./images/screenshot_code.png)
