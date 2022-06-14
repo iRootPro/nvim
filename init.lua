@@ -46,6 +46,7 @@ return require('packer').startup(function()
     'nvim-telescope/telescope.nvim',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
+  use { "nvim-telescope/telescope-file-browser.nvim" }
   use 'windwp/nvim-autopairs'
   use {
     "ur4ltz/surround.nvim",
