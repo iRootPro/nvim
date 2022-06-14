@@ -1,6 +1,6 @@
 # Neovim для разработки на JavaScript
 
-Сборка NeoVim для разработки. Лично использую для разработки на: **ReactJS** и **NodeJS**.
+Сборка NeoVim для разработки. Лично использую для разработки на: **ReactJS**, **NodeJS**, **Go**.
 
 Данная сборка будет постоянно улучшаться, ведь для vim нет предела, всегда есть что подкрутить.
 
@@ -46,35 +46,7 @@
 
 **$** - в конец строки
 
-**gg** - начало документаlet g:tagbar_type_json = {
-    \ 'ctagstype' : 'json',
-    \ 'kinds' : [
-      \ 'o:objects',
-      \ 'a:arrays',
-      \ 'n:numbers',
-      \ 's:strings',
-      \ 'b:booleans',
-      \ 'z:nulls'
-    \ ],
-  \ 'sro' : '.',
-    \ 'scope2kind': {
-    \ 'object': 'o',
-      \ 'array': 'a',
-      \ 'number': 'n',
-      \ 'string': 's',
-      \ 'boolean': 'b',
-      \ 'null': 'z'
-    \ },
-    \ 'kind2scope': {
-    \ 'o': 'object',
-      \ 'a': 'array',
-      \ 'n': 'number',
-      \ 's': 'string',
-      \ 'b': 'boolean',
-      \ 'z': 'null'
-    \ },
-    \ 'sort' : 0
-    \ }
+**gg** - начало документа
 
 **G** - конец документа
 
@@ -211,6 +183,12 @@
 
 **Ctrl+\\** - открыть/закрыть терминал
 
+</details>
+
+<details>
+<summary>Разное</summary/>
+
+**F8** - открыть панель с symbols
 </details>
 
 ## Внешний вид (скриншоты)
