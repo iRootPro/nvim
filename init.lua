@@ -33,6 +33,14 @@ return require('packer').startup(function()
   use 'Pocco81/AutoSave.nvim'
   use { 'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' } }
   use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
+  use { "kyazdani42/nvim-tree.lua", requires = {
+        "kyazdani42/nvim-web-devicons",
+      },
+        cmd = { "NvimTreeToggle", "NvimTreeClose" },
+        config = function()
+          require("nvim-tree").setup({})
+   end,
+  }
   use {"akinsho/toggleterm.nvim", tag = 'v1.*', config = function()
       require("toggleterm").setup({
     })
@@ -70,3 +78,4 @@ return require('packer').startup(function()
   end
 }
 end)
+

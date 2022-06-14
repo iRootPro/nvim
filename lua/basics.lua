@@ -34,7 +34,7 @@ vim.api.nvim_set_keymap('n', 'tk', ':tabnext<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', 'tj', ':tabprev<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', 'to', ':tabo<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-S>', ':%s/', { noremap = true })
-vim.api.nvim_set_keymap('n', '<C-N>', ":Lexplore<CR> :vertical resize 30<CR>", { noremap = true })
+vim.api.nvim_set_keymap('n', '<C-N>', ":NvimTreeToggle<CR>", { noremap = true })
 vim.api.nvim_set_keymap("n", "<leader>t", ":sp<CR> :term<CR> :resize 20N<CR> i", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("t", "<Esc>", "<C-\\><C-n>", {noremap = true, silent = true})
 
