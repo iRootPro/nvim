@@ -1,4 +1,4 @@
-# Neovim для разработки на JavaScript
+# Neovim для разработки JavaScript, Golang 
 
 Сборка NeoVim для разработки. Лично использую для разработки на: **ReactJS**, **NodeJS**, **Go**.
 
