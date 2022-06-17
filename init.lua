@@ -36,12 +36,16 @@ return require('packer').startup(function()
   use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
   use {'majutsushi/tagbar'}
   use { "kyazdani42/nvim-tree.lua", requires = {
-        "kyazdani42/nvim-web-devicons",
+        "kyazdani42/nvim-web-devicons", config = function ()
+          require('nvim-tree').setup({
+              update_focused_file = {
+                enable = true,
+                update_cwd = true,
+                ignore_list = {},
+            },
+      })
+        end
       },
-        cmd = { "NvimTreeToggle", "NvimTreeClose" },
-        config = function()
-          require("nvim-tree").setup({})
-   end,
   }
   use {'simrat39/symbols-outline.nvim', cmd = "SymbolsOutline", }
   use {"akinsho/toggleterm.nvim", tag = 'v1.*', config = function()

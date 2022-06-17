@@ -38,6 +38,9 @@ vim.api.nvim_set_keymap('n', '<C-N>', ":NvimTreeToggle<CR>", { noremap = true })
 vim.api.nvim_set_keymap("n", "<leader>t", ":sp<CR> :term<CR> :resize 20N<CR> i", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("t", "<Esc>", "<C-\\><C-n>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "<F8>", ":TagbarToggle<CR>", {noremap = true})
+vim.api.nvim_set_keymap('n', 'ff', ':NvimTreeFindFile<CR>', { noremap = true })
+
+
 
 vim.g["netrw_banner"] = 0
 vim.g["netrw_liststyle"] = 3
