@@ -9,6 +9,7 @@ require('diffview-config')
 require('toggleterm-config')
 require('autopairs-config')
 require('autosave-config')
+require'nvim-tree'.setup {}
 require('nvim-treesitter.configs').setup {
   ensure_installed = {'javascript', 'go'},
   context_commentstring = {
@@ -27,7 +28,7 @@ return require('packer').startup(function()
   use {'neoclide/coc.nvim', branch = 'release'}
   use {'fatih/vim-go'}
   use 'folke/tokyonight.nvim'
-  use 'nvim-treesitter/nvim-treesitter' 
+  use 'nvim-treesitter/nvim-treesitter'
   use 'tpope/vim-commentary'
   use 'JoosepAlviste/nvim-ts-context-commentstring'
   use 'ThePrimeagen/git-worktree.nvim'
@@ -76,7 +77,7 @@ return require('packer').startup(function()
       vim.g.mkdp_filetypes = { 'markdown' }
     end,
     ft = { 'markdown' }
-  } 
+  }
   use {
   "folke/zen-mode.nvim",
   config = function()
