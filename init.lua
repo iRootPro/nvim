@@ -2,7 +2,8 @@ require('basics')
 require('colors')
 require('telescope-config')
 require('lazygit-config')
-require('coc-config')
+require('lsp')
+-- require('coc-config')
 require('lualine').setup()
 require('git-config')
 require('diffview-config')
@@ -25,10 +26,18 @@ require('nvim-treesitter.configs').setup {
 
 return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
-  use {'neoclide/coc.nvim', branch = 'release'}
+  -- use {'neoclide/coc.nvim', branch = 'release'}
   use {'fatih/vim-go'}
   use 'folke/tokyonight.nvim'
   use 'nvim-treesitter/nvim-treesitter'
+  use 'neovim/nvim-lspconfig'
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/nvim-cmp'
+  -- icons for autocomplete
+  use('onsails/lspkind-nvim')
+
   use 'tpope/vim-commentary'
   use 'JoosepAlviste/nvim-ts-context-commentstring'
   use 'ThePrimeagen/git-worktree.nvim'
@@ -48,6 +57,7 @@ return require('packer').startup(function()
         end
       },
   }
+  use'psliwka/vim-smoothie'
   use {'simrat39/symbols-outline.nvim', cmd = "SymbolsOutline", }
   use {"akinsho/toggleterm.nvim", tag = 'v1.*', config = function()
       require("toggleterm").setup({
